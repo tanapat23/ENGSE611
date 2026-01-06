@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web Page</title>
+    <style>
+        /* จัดการพื้นหลังและฟอนต์ */
+        body {
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+            line-height: 1.7;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f4f8; 
+            color: #333;
+        }
+
+        /* จัดเนื้อหาให้อยู่ในกรอบขาว */
+        header, nav, main, footer {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 25px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        /* ส่วนหัวแบบไม่มีรูป - เน้นใช้สีและขนาดตัวอักษร */
+        header {
+            text-align: center;
+            border-top: 8px solid #3498db;
+            border-radius: 10px 10px 0 0;
+            padding-bottom: 30px;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            color: #2c3e50;
+            margin-bottom: 5px;
+            letter-spacing: 1px;
+        }
+
+        header h2 {
+            font-size: 1.2rem;
+            color: #3498db;
+            margin-top: 0;
+            border: none; /* ลบขอบข้างสำหรับ h2 ใน header */
+            padding-left: 0;
+        }
+
+        /* ตกแต่งเมนู */
+        nav {
+            text-align: center;
+            background: #3498db;
+            padding: 12px;
+            margin: 5px auto;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #ffffff;
+            font-weight: bold;
+            margin: 0 15px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #d1d1d1;
+            text-decoration: underline;
+        }
+
+        /* หัวข้อในเนื้อหา */
+        main h2 {
+            color: #2980b9;
+            border-left: 6px solid #3498db;
+            padding-left: 15px;
+            margin-top: 30px;
+        }
+
+        /* ตาราง */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        table th {
+            background-color: #3498db;
+            color: white;
+            padding: 12px;
+            border: 1px solid #2980b9;
+        }
+
+        table td {
+            padding: 12px;
+            border: 1px solid #eee;
+        }
+
+        table tr:nth-child(even) {
+            background-color: #f8fbff;
+        }
+
+        /* ฟอร์มและปุ่ม */
+        input[type="text"], input[type="email"], textarea {
+            width: 100%;
+            padding: 12px;
+            margin-top: 8px;
+            border: 2px solid #e0e0e0;
+            border-radius: 6px;
+            box-sizing: border-box;
+            transition: 0.3s;
+        }
+
+        input:focus, textarea:focus {
+            border-color: #3498db;
+            outline: none;
+        }
+
+        input[type="submit"] {
+            background-color: #2ecc71;
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 1rem;
+        }
+
+        input[type="reset"] {
+            background-color: #e74c3c;
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 1rem;
+            margin-left: 10px;
+        }
+
+        /* ส่วนท้าย */
+        footer {
+            border-radius: 0 0 10px 10px;
+            text-align: center;
+            border-top: 1px solid #eee;
+        }
+
+        footer p {
+            font-weight: bold;
+            color: #7f8c8d;
+        }
+
+        footer ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        footer li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        footer a {
+            color: #3498db;
+            text-decoration: none;
+        }
+
+        hr {
+            border: 0;
+            height: 1px;
+            background: #eee;
+            margin: 30px 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>ประวัติส่วนตัว</h1>
+        <h2>นายธนภัทร ชัยทอง (อ๋อง)</h2>
+    </header>
+
+    <nav>
+        <a href="#profile">ข้อมูล</a>
+        <a href="#ability">ความสามารถ</a>
+        <a href="#message">ติดต่อ</a>
+    </nav>
+
+    <main>
+        <article id="profile">
+            <h2>ข้อมูลเกี่ยวกับฉัน</h2>
+            <p>
+                สวัสดีครับผมชื่อเล่นว่า <strong>อ๋อง</strong> ผมเป็นคนที่ชอบแสวงหาความท้าทายใหม่ๆ อยู่เสมอ 
+                ไม่ว่าจะเป็นกิจกรรมสันทนาการอย่างการเล่นดนตรี (กีต้าร์, เปียโน, กลอง) หรือกิจกรรมกีฬา 
+                ผมเชื่อว่าการเรียนรู้ไม่มีที่สิ้นสุด และสนุกกับการฝึกเขียนโค้ดเพื่อพัฒนาตัวเองครับ
+            </p>
+
+            <h3>งานอดิเรกยอดฮิต</h3>
+            <ol>
+                <li>เล่นเกมและศึกษาเทคโนโลยี</li>
+                <li>เขียนโค้ดและสร้างโปรเจกต์ใหม่ๆ</li>
+                <li>ฝึกทักษะดนตรีและกีฬา</li>
+            </ol> 
+        </article>
+
+        <hr>
+
+        <section id="ability">
+            <h2>ความสามารถ</h2>
+            <dl>
+                <dt><strong>Programming</strong></dt>
+                <dd>ทักษะการเขียนโค้ดและทำความเข้าใจตรรกะพื้นฐาน</dd>
+                <br>
+                <dt><strong>Sport & Music</strong></dt>
+                <dd>เล่นกีฬาได้หลากหลายและเล่นเครื่องดนตรีได้หลายประเภท</dd>
+            </dl>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>ข้อมูลทั่วไป</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>หัวข้อ</th>
+                        <th>รายละเอียด</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>ชื่อเล่น</td>
+                        <td>อ๋อง</td>
+                    </tr>
+                    <tr>
+                        <td>สิ่งที่สนใจ</td>
+                        <td>เทคโนโลยีเกม และ นวัตกรรมใหม่ๆ</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <hr>
+
+        <section id="message">
+            <h2>ส่งข้อความถึงฉัน</h2>
+            <form>
+                <label>ชื่อผู้ติดต่อ:<br>
+                    <input type="text" placeholder="ระบุชื่อของคุณ">
+                </label>
+                <br><br>
+                <label>อีเมล:<br>
+                    <input type="email" placeholder="example@mail.com">
+                </label>
+                <br><br>
+                <label>ข้อความ:<br>
+                    <textarea rows="5" placeholder="พิมพ์ข้อความที่นี่..."></textarea>
+                </label>
+                <br><br>
+                <input type="submit" value="ส่งข้อความ">
+                <input type="reset" value="ล้างข้อมูล">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>ช่องทางติดต่อออนไลน์</p>
+        <ul>
+            <li><a href="https://www.instagram.com/ong.dhxo" target="_blank">Instagram</a></li>
+            <li><a href="https://github.com/tanapat23" target="_blank">GitHub</a></li>
+        </ul>
+    </footer>
+
+</body>
+</html>
