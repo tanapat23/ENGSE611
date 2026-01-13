@@ -1,0 +1,63 @@
+body {
+    font-family: 'Sarabun', sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    gap: 25px;
+}
+
+.card {
+    background: white;
+    width: 250px;
+    padding: 40px 20px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.card h3 {
+    margin: 15px 0;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.card p {
+    color: #666;
+    font-size: 0.95rem;
+    transition: color 0.3s ease;
+}
+
+.icon {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.card-1:hover {
+    background-color: #ff4757;
+}
+
+.card-2:hover {
+    background-color: #2e86de;
+}
+
+.card-3:hover {
+    background-color: #2ed573;
+}
+
+.card:hover h3, 
+.card:hover p {
+    color: white;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
